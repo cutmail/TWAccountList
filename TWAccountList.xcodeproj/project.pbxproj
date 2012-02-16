@@ -13,8 +13,9 @@
 		6865AA9614ECC2CF00240660 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6865AA9414ECC2CF00240660 /* InfoPlist.strings */; };
 		6865AA9814ECC2CF00240660 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6865AA9714ECC2CF00240660 /* main.m */; };
 		6865AA9C14ECC2CF00240660 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6865AA9B14ECC2CF00240660 /* AppDelegate.m */; };
-		6865AA9F14ECC2CF00240660 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6865AA9E14ECC2CF00240660 /* ViewController.m */; };
-		6865AAA214ECC2CF00240660 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6865AAA014ECC2CF00240660 /* ViewController.xib */; };
+		6865AA9F14ECC2CF00240660 /* AccountsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6865AA9E14ECC2CF00240660 /* AccountsListViewController.m */; };
+		6865AAA214ECC2CF00240660 /* AccountsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6865AAA014ECC2CF00240660 /* AccountsListViewController.xib */; };
+		6865AAA914ECC34F00240660 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6865AAA814ECC34F00240660 /* Accounts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +23,16 @@
 		6865AA8B14ECC2CF00240660 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6865AA8D14ECC2CF00240660 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6865AA8F14ECC2CF00240660 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		6865AA9314ECC2CF00240660 /* TWAccountList-Info.plist */ = {isa = PBXFileReference; path = "TWAccountList-Info.plist"; sourceTree = "<group>"; };
+		6865AA9314ECC2CF00240660 /* TWAccountList-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TWAccountList-Info.plist"; sourceTree = "<group>"; };
 		6865AA9514ECC2CF00240660 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6865AA9714ECC2CF00240660 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6865AA9914ECC2CF00240660 /* TWAccountList-Prefix.pch */ = {isa = PBXFileReference; path = "TWAccountList-Prefix.pch"; sourceTree = "<group>"; };
-		6865AA9A14ECC2CF00240660 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		6865AA9914ECC2CF00240660 /* TWAccountList-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TWAccountList-Prefix.pch"; sourceTree = "<group>"; };
+		6865AA9A14ECC2CF00240660 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6865AA9B14ECC2CF00240660 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6865AA9D14ECC2CF00240660 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
-		6865AA9E14ECC2CF00240660 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		6865AAA114ECC2CF00240660 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		6865AA9D14ECC2CF00240660 /* AccountsListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountsListViewController.h; sourceTree = "<group>"; };
+		6865AA9E14ECC2CF00240660 /* AccountsListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountsListViewController.m; sourceTree = "<group>"; };
+		6865AAA114ECC2CF00240660 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AccountsListViewController.xib; sourceTree = "<group>"; };
+		6865AAA814ECC34F00240660 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6865AAA914ECC34F00240660 /* Accounts.framework in Frameworks */,
 				6865AA8C14ECC2CF00240660 /* UIKit.framework in Frameworks */,
 				6865AA8E14ECC2CF00240660 /* Foundation.framework in Frameworks */,
 				6865AA9014ECC2CF00240660 /* CoreGraphics.framework in Frameworks */,
@@ -67,6 +70,7 @@
 		6865AA8A14ECC2CF00240660 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6865AAA814ECC34F00240660 /* Accounts.framework */,
 				6865AA8B14ECC2CF00240660 /* UIKit.framework */,
 				6865AA8D14ECC2CF00240660 /* Foundation.framework */,
 				6865AA8F14ECC2CF00240660 /* CoreGraphics.framework */,
@@ -79,9 +83,9 @@
 			children = (
 				6865AA9A14ECC2CF00240660 /* AppDelegate.h */,
 				6865AA9B14ECC2CF00240660 /* AppDelegate.m */,
-				6865AA9D14ECC2CF00240660 /* ViewController.h */,
-				6865AA9E14ECC2CF00240660 /* ViewController.m */,
-				6865AAA014ECC2CF00240660 /* ViewController.xib */,
+				6865AA9D14ECC2CF00240660 /* AccountsListViewController.h */,
+				6865AA9E14ECC2CF00240660 /* AccountsListViewController.m */,
+				6865AAA014ECC2CF00240660 /* AccountsListViewController.xib */,
 				6865AA9214ECC2CF00240660 /* Supporting Files */,
 			);
 			path = TWAccountList;
@@ -150,7 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6865AA9614ECC2CF00240660 /* InfoPlist.strings in Resources */,
-				6865AAA214ECC2CF00240660 /* ViewController.xib in Resources */,
+				6865AAA214ECC2CF00240660 /* AccountsListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,7 +167,7 @@
 			files = (
 				6865AA9814ECC2CF00240660 /* main.m in Sources */,
 				6865AA9C14ECC2CF00240660 /* AppDelegate.m in Sources */,
-				6865AA9F14ECC2CF00240660 /* ViewController.m in Sources */,
+				6865AA9F14ECC2CF00240660 /* AccountsListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,12 +182,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		6865AAA014ECC2CF00240660 /* ViewController.xib */ = {
+		6865AAA014ECC2CF00240660 /* AccountsListViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6865AAA114ECC2CF00240660 /* en */,
 			);
-			name = ViewController.xib;
+			name = AccountsListViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

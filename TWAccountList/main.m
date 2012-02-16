@@ -2,8 +2,8 @@
 //  main.m
 //  TWAccountList
 //
-//  Created by 荒井 達哉 on 12/02/16.
-//  Copyright (c) 2012年 genesix, Inc. All rights reserved.
+//  Created by Tatsuya Arai on 12/02/16.
+//  Copyright (c) 2012 genesix, Inc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

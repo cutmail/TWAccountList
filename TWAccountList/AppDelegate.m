@@ -2,13 +2,13 @@
 //  AppDelegate.m
 //  TWAccountList
 //
-//  Created by 荒井 達哉 on 12/02/16.
-//  Copyright (c) 2012年 genesix, Inc. All rights reserved.
+//  Created by Tatsuya Arai on 12/02/16.
+//  Copyright (c) 2012 genesix, Inc. All rights reserved.
 //
 
 #import "AppDelegate.h"
 
-#import "ViewController.h"
+#import "AccountsListViewController.h"
 
 @implementation AppDelegate
 
@@ -26,7 +26,7 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
+    self.viewController = [[[AccountsListViewController alloc] init] autorelease];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
